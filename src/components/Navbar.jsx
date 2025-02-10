@@ -61,27 +61,28 @@ const Navbar = () => {
 
       {/* Menu Mobile */}
       <div
-        className={`fixed top-[84px] right-0 h-screen w-3/4 bg-black/90 p-8 transition-transform duration-300 ease-in-out z-20 ${
-          isOpen ? "translate-x-0" : "translate-x-full"
-        }`}
-      >
-        <ul className="flex flex-col gap-8 text-white">
-          <a href="#home" className="cursor-pointer text-lg opacity-100 transition-all duration-300 hover:text-yellow-500">
-            <li>Home</li>
-          </a>
-          <a href="#projects" className="cursor-pointer text-lg opacity-100 transition-all duration-300 hover:text-yellow-500">
-            <li>Projects</li>
-          </a>
-          <a href="#work" className="cursor-pointer text-lg opacity-100 transition-all duration-300 hover:text-yellow-500">
-            <li>Work</li>
-          </a>
-          <a href="#about" className="cursor-pointer text-lg opacity-100 transition-all duration-300 hover:text-yellow-500">
-            <li>About</li>
-          </a>
-          <a href="#contact" className="cursor-pointer text-lg opacity-100 transition-all duration-300 hover:text-yellow-500">
-            <li>Contact</li>
-          </a>
-        </ul>
+  className={`fixed top-[84px] right-0 h-screen w-3/4 bg-black/90 p-8 transition-transform duration-300 ease-in-out z-20 ${
+    isOpen ? "translate-x-0" : "translate-x-full"
+  }`}
+          >
+            <ul className="flex flex-col gap-8 text-white">
+              <a href="#home" onClick={menuOpen} className="cursor-pointer text-lg opacity-100 transition-all duration-300 hover:text-yellow-500">
+                <li>Home</li>
+              </a>
+              <a href="#projects" onClick={menuOpen} className="cursor-pointer text-lg opacity-100 transition-all duration-300 hover:text-yellow-500">
+                <li>Projects</li>
+              </a>
+              <a href="#work" onClick={menuOpen} className="cursor-pointer text-lg opacity-100 transition-all duration-300 hover:text-yellow-500">
+                <li>Work</li>
+              </a>
+              <a href="#about" onClick={menuOpen} className="cursor-pointer text-lg opacity-100 transition-all duration-300 hover:text-yellow-500">
+                <li>About</li>
+              </a>
+              <a href="#contact" onClick={menuOpen} className="cursor-pointer text-lg opacity-100 transition-all duration-300 hover:text-yellow-500">
+                <li>Contact</li>
+              </a>
+            </ul>
+
 
         <ul className="flex flex-wrap gap-5 justify-center mt-10">
           <li className="cursor-pointer text-xl opacity-100 transition-all duration-300 hover:text-blue-500">
